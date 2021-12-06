@@ -10,9 +10,6 @@
 
 ### uwsgi
 #### 安裝
-:::warning
-不要安裝在虛擬環境中
-:::
 * `pip3 insatll uwsgi`
 
 #### 執行命令
