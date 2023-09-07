@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: asia.gcr.io/long-micron-397706/flask-app
+        image: asia.gcr.io/long-micron-397706/flask-app-beta
         ports:
         - containerPort: 5000
         env:
@@ -25,7 +25,7 @@ apiVersion: "v1"
 kind: "Service"
 metadata:
   name: "gcp-devops-gke-service"
-  namespace: "gcp-devops"
+  namespace: "gcp-devops-beta"
   labels:
     app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
 spec:
