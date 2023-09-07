@@ -3,7 +3,7 @@ steps:
 - name: "docker"
   args: ['build', '-t', 'asia.gcr.io/$PROJECT_ID/flask-app', '.']
 # push container image
-- name: "asia.gcr.io/cloud-builders/docker"
+- name: "gcr.io/cloud-builders/docker"
   args: ["push","asia.gcr.io/$PROJECT_ID/flask-app"]
 # deploy container to GKE
 - name: "gcr.io/cloud-builders/gke-deploy"
