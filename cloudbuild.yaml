@@ -12,5 +12,5 @@ steps:
   - --filename=gke.yaml
   - --image=asia.gcr.io/$PROJECT_ID/flask-app
   - --location=asia-east1-a
-  - --cluster=clsuter-1
+  - --cluster=cluster-1
   - --namespace=gcp-devops
