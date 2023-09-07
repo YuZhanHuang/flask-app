@@ -1,16 +1,16 @@
 steps:
 # build the container image
 - name: "docker"
-  args: ['build', '-t', 'asia.gcr.io/$PROJECT_ID/flask-app', '.']
+  args: ['build', '-t', 'asia.gcr.io/$PROJECT_ID/flask-app-beta', '.']
 # push container image
 - name: "gcr.io/cloud-builders/docker"
-  args: ["push","asia.gcr.io/$PROJECT_ID/flask-app"]
+  args: ["push","asia.gcr.io/$PROJECT_ID/flask-app-beta"]
 # deploy container to GKE
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
   - run
   - --filename=gke.yaml
-  - --image=asia.gcr.io/$PROJECT_ID/flask-app
+  - --image=asia.gcr.io/$PROJECT_ID/flask-app-beta
   - --location=asia-east1-a
   - --cluster=cluster-1
-  - --namespace=gcp-devops
+  - --namespace=gcp-devops-beta
