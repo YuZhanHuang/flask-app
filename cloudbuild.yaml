@@ -11,6 +11,6 @@ steps:
   - run
   - --filename=gke.yaml
   - --image=asia.gcr.io/$PROJECT_ID/flask-app
-  - --location=asia-east1-a
+  - --region=asia-east1
   - --cluster=autopilot-secret-cluster
   - --namespace=gcp-devops
