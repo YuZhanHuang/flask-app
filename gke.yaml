@@ -20,6 +20,7 @@ spec:
         env:
         - name: PORT
           value: "5000"
+      serviceAccountName: readonly-sa
 ---
 apiVersion: "v1"
 kind: "Service"
