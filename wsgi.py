@@ -28,5 +28,4 @@ def get_google_secret_payload(gcloud_secret_name="beta-env"):
 
 @app.route("/")
 def index():
-    print('get_google_secret_payload', get_google_secret_payload())
-    return f'Deploy Test {get_google_secret_payload()}'
+    return f'Deploy Test'
