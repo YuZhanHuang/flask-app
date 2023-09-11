@@ -10,7 +10,6 @@ steps:
   args:
   - run
   - --filename=gke.yaml
-  - --image=asia.gcr.io/$PROJECT_ID/flask-app
   - --cluster=autopilot-secret-cluster
   - --location=asia-east1
   - --namespace=gcp-devops
