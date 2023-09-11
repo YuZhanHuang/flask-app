@@ -1,4 +1,4 @@
-# flask-app
+# Flask App
 ### server
 - `ubuntu-18.04`
 
