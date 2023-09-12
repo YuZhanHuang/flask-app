@@ -4,7 +4,7 @@ metadata:
   name: flask-app
   namespace: "gcp-devops"
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: gcp
@@ -22,6 +22,13 @@ spec:
         env:
         - name: PORT
           value: "5000"
+                  resources:
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "100m"
+          memory: "128Mi"
 ---
 apiVersion: "v1"
 kind: "Service"
