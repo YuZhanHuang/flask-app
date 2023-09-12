@@ -13,6 +13,7 @@ spec:
       labels:
         app: gcp
     spec:
+      serviceAccountName: readonly-sa
       containers:
       - name: flask-app
         image: asia.gcr.io/long-micron-397706/flask-app
